@@ -14,21 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-// export const db = mysql2.createConnection({
-//     host: 'localhost',
-//     user:'root',
-//     password: '123456789',
-//     database: 'todo'    
-// });
 
-
-// db.connect((err)=>{
-//     if(err){
-//         console.log('failed', err.message)
-//         return;
-//     }
-//     console.log('donnnne')
-// })
 
 app.use('/', appRoutes);
 
